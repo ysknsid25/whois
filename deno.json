@@ -1,13 +1,13 @@
 {
     "name": "@ysknsid25/whois",
     "description": "A CLI tool to show my profile.",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "exports": "./main.ts",
     "tasks": {
         "dev": "deno run --watch main.ts",
         "show": "deno run main.ts"
     },
     "publish": {
-        "include": ["deno.json", "LICENSE", "README.md", "main.ts"]
+        "include": ["deno.json", "LICENSE", "README.md", "main.ts", ".npmrc"]
     }
 }
