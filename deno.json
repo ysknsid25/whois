@@ -3,6 +3,7 @@
     "description": "A CLI tool to show my profile.",
     "version": "1.0.0",
     "exports": "./main.ts",
+    "bin": "./main.ts",
     "tasks": {
         "dev": "deno run --watch main.ts"
     },

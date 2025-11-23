@@ -1,11 +1,11 @@
-# @ysknsid25/whois
+# @yaknsid25/whois
 
 This is a CLI tool to show my profile.
 
 ## Usage
 
 ```sh
-npx jsr:@ysknsid25/whois
+deno run jsr:@ysknsid25/whois
 ```
 
 ## Publishing
