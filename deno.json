@@ -8,6 +8,6 @@
         "dev": "deno run --watch main.ts"
     },
     "publish": {
-        "include": ["deno.json", "LICENSE", "README.md", "main.ts"]
+        "include": ["deno.json", "LICENSE", "README.md", "main.ts", ".npmrc"]
     }
 }
