@@ -1,0 +1,21 @@
+name: Publish
+on:
+  push:
+    tags:
+      - "v*.*.*"
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: Set version
+        run: |
+          VERSION=${{ github.ref_name }}
+          deno eval "const json = JSON.parse(Deno.readTextFileSync('./deno.json')); json.version = '${VERSION#v}'; Deno.writeTextFileSync('./deno.json', JSON.stringify(json, null, 2) + '\n');"
+      - run: deno publish

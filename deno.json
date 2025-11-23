@@ -1,0 +1,11 @@
+{
+    "name": "@ysknsid25/whois",
+    "version": "0.1.0",
+    "exports": "./main.ts",
+    "tasks": {
+        "dev": "deno run --watch main.ts"
+    },
+    "publish": {
+        "include": ["deno.json", "LICENSE", "README.md", "main.ts"]
+    }
+}
