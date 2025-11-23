@@ -5,7 +5,7 @@ This is a CLI tool to show my profile.
 ## Usage
 
 ```sh
-npx jsr:@yaknsid25/whois
+npx jsr:@ysknsid25/whois
 ```
 
 ## Publishing
