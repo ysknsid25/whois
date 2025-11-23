@@ -3,14 +3,11 @@
     "description": "A CLI tool to show my profile.",
     "version": "1.0.7",
     "exports": "./main.ts",
-    "bin": {
-        "whois": "./main.ts"
-    },
     "tasks": {
         "dev": "deno run --watch main.ts",
         "show": "deno run main.ts"
     },
     "publish": {
-        "include": ["deno.json", "LICENSE", "README.md", "main.ts", ".npmrc"]
+        "include": ["deno.json", "LICENSE", "README.md", "main.ts"]
     }
 }

@@ -5,7 +5,7 @@ This is a CLI tool to show my profile.
 ## Usage
 
 ```sh
-deno run jsr:@ysknsid25/whois
+npx deno run jsr:@ysknsid25/whois
 ```
 
 ## Publishing
